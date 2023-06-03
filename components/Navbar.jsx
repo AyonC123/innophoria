@@ -49,7 +49,7 @@ export default function Navbar({ session }) {
 					/>
 				)}
 				{open && (
-					<ul className="flex flex-col justify-center items-center absolute top-28 right-0 left-0 gap-5 bg-background w-full py-8 shadow-flood">
+					<ul className="flex flex-col justify-center items-center absolute top-28 right-0 left-0 gap-5 bg-background w-full py-8 shadow-bleed">
 						<li className="hover:font-bold ease-linear duration-150">
 							<Link href="/">Home</Link>
 						</li>

@@ -17,7 +17,7 @@ module.exports = {
 				background: "#D8DDDE80",
 			},
 			boxShadow: {
-				flood: "0 99.3vmax 0 100vmax #D8DDDE80",
+				bleed: "0 99.3vmax 0 100vmax #D8DDDE80",
 			},
 		},
 	},
