@@ -8,7 +8,7 @@ import { faXmark, faBars } from "@fortawesome/free-solid-svg-icons";
 export default function Navbar({ session }) {
 	const [open, setOpen] = useState(false);
 	return (
-		<nav className="flex justify-between p-10 items-center text-center sticky top-0 backdrop-blur-md text-primary">
+		<nav className="flex justify-between p-10 items-center text-center sticky top-0 backdrop-blur-md">
 			{/* <Image src={"/logo.png"} alt="logo image" height={30} width={125} /> */}
 			<h1 className="text-xl font-bold">Sum Co.</h1>
 			<ul className="hidden sm:flex gap-10">
@@ -22,14 +22,14 @@ export default function Navbar({ session }) {
 			{session ? (
 				<button
 					onClick={() => signOut()}
-					className="hidden sm:block p-2 bg-primary text-white rounded-lg"
+					className="hidden sm:block p-2 rounded-lg border-2 border-white w-20"
 				>
 					Log Out
 				</button>
 			) : (
 				<button
 					onClick={() => signIn()}
-					className="hidden sm:block p-2 bg-primary text-white rounded-lg"
+					className="hidden sm:block p-2 rounded-lg border-2 border-white w-20"
 				>
 					Log In
 				</button>
@@ -49,7 +49,7 @@ export default function Navbar({ session }) {
 					/>
 				)}
 				{open && (
-					<ul className="flex flex-col justify-center items-center absolute top-28 right-0 left-0 gap-5 bg-background w-full py-8 shadow-bleed">
+					<ul className="flex flex-col justify-center items-center absolute top-28 right-0 left-0 gap-5 bg-black w-full py-8 shadow-bleed">
 						<li className="hover:font-bold ease-linear duration-150">
 							<Link href="/">Home</Link>
 						</li>
@@ -61,14 +61,14 @@ export default function Navbar({ session }) {
 							{session ? (
 								<button
 									onClick={() => signOut()}
-									className="p-2 bg-primary text-white rounded-lg"
+									className="p-2 rounded-lg border-2 border-white w-20"
 								>
 									Log Out
 								</button>
 							) : (
 								<button
 									onClick={() => signIn()}
-									className="p-2 bg-primary text-white rounded-lg"
+									className="p-2 rounded-lg border-2 border-white w-20"
 								>
 									Log In
 								</button>
