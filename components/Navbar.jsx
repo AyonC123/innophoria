@@ -8,7 +8,7 @@ import { faXmark, faBars } from "@fortawesome/free-solid-svg-icons";
 export default function Navbar({ session }) {
 	const [open, setOpen] = useState(false);
 	return (
-		<nav className="flex justify-between p-10 items-center text-center sticky top-0 backdrop-blur-md">
+		<nav className="flex justify-between p-10 items-center text-center sticky top-0 backdrop-blur-xl">
 			{/* <Image src={"/logo.png"} alt="logo image" height={30} width={125} /> */}
 			<h1 className="text-xl font-bold">Sum Co.</h1>
 			<ul className="hidden sm:flex gap-10">
