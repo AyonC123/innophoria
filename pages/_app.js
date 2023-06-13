@@ -1,4 +1,5 @@
 import { SessionProvider } from "next-auth/react";
+import Head from "next/head"
 
 import Layout from "@/components/Layout";
 import "@/styles/globals.css";
@@ -10,6 +11,9 @@ export default function App({
 	return (
 		<>
 			<SessionProvider session={session}>
+				<Head>
+					<title>Innophoria</title>
+				</Head>
 				<Layout>
 					<Component {...pageProps} />
 				</Layout>
