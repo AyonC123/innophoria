@@ -45,8 +45,7 @@ body {
 	counter-reset: numbers;
 }
 
-.step,
-.stepEnd {
+.step {
 	position: relative;
 }
 
@@ -66,7 +65,7 @@ body {
 	font-weight: bold;
 }
 
-.stepEnd::before {
+.step:last-child::before {
 	content: "➜";
 	position: absolute;
 	left: -4.5em;

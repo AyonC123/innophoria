@@ -12,15 +12,13 @@ export default function SignUp() {
 		return (
 			<>
 				<div className="flex justify-evenly items-center">
-					<div className="sm:flex hidden justify-start flex-col gap-20 border-l-2 border-black p-12 pb-0">
-						<div className="steps flex justify-start flex-col gap-20">
-							<h1 className="step">Basic Details</h1>
-							<h1 className="step">Verification</h1>
-							<h1 className="step">Professional Details</h1>
-							<h1 className="step">Employment Details</h1>
-							<h1 className="step">Job Preference</h1>
-						</div>
-						<h1 className="stepEnd">Start Job Search</h1>
+					<div className="steps sm:flex hidden justify-start flex-col gap-20 border-l-2 border-black p-12 pb-0">
+						<h1 className="step">Basic Details</h1>
+						<h1 className="step">Verification</h1>
+						<h1 className="step">Professional Details</h1>
+						<h1 className="step">Employment Details</h1>
+						<h1 className="step">Job Preference</h1>
+						<h1 className="step">Start Job Search</h1>
 					</div>
 					<div
 						style={{ width: "500px" }}
@@ -70,7 +68,7 @@ export default function SignUp() {
 						<Link href={"/signin"} className="text-primary text-sm">
 							Sign In instead
 						</Link>
-						<p className="text-xs text-left sm:mx-8">
+						<p className="text-xs text-center sm:mx-8">
 							By signing up you agree to Dexotita&apos;s Terms of Service and
 							Privacy Policy and agree to receive marketing communications from
 							Dexotita at the email address provided.{" "}
