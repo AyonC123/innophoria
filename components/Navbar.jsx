@@ -1,4 +1,4 @@
-import { signIn, signOut } from "next-auth/react";
+import { signOut } from "next-auth/react";
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
@@ -10,30 +10,29 @@ export default function Navbar({ session }) {
 	return (
 		<nav className="flex justify-between p-10 items-center text-center sticky top-0 backdrop-blur-xl">
 			{/* <Image src={"/logo.png"} alt="logo image" height={30} width={125} /> */}
-			<h1 className="text-xl font-bold">Sum Co.</h1>
-			<ul className="hidden sm:flex gap-10">
+			<h1 className="text-3xl font-bold">Dexotita.</h1>
+			<ul className="hidden sm:flex gap-10 items-center">
 				<li className="hover:font-bold ease-linear duration-150">
 					<Link href="/">Home</Link>
 				</li>
 				<li className="hover:font-bold ease-linear duration-150">
 					<Link href="/contact">Contact</Link>
 				</li>
+				<li className="hover:font-bold ease-linear duration-150">
+					{session ? (
+						<button
+							onClick={() => signOut()}
+							className="hidden sm:block rounded-lg "
+						>
+							Log Out
+						</button>
+					) : (
+						<Link href="/signup" className="hidden sm:block rounded-lg ">
+							Log In
+						</Link>
+					)}
+				</li>
 			</ul>
-			{session ? (
-				<button
-					onClick={() => signOut()}
-					className="hidden sm:block p-2 rounded-lg border-2 border-white w-20"
-				>
-					Log Out
-				</button>
-			) : (
-				<button
-					onClick={() => signIn()}
-					className="hidden sm:block p-2 rounded-lg border-2 border-white w-20"
-				>
-					Log In
-				</button>
-			)}
 			<div className="block sm:hidden">
 				{!open ? (
 					<FontAwesomeIcon
@@ -49,29 +48,22 @@ export default function Navbar({ session }) {
 					/>
 				)}
 				{open && (
-					<ul className="flex flex-col justify-center items-center absolute top-28 right-0 left-0 gap-5 bg-black w-full py-8 shadow-bleed">
+					<ul className="flex flex-col justify-center items-center absolute top-28 right-0 left-0 gap-5 bg-main w-full py-8 shadow-bleed text-black">
 						<li className="hover:font-bold ease-linear duration-150">
 							<Link href="/">Home</Link>
 						</li>
 						<li className="hover:font-bold ease-linear duration-150">
 							<Link href="/contact">Contact</Link>
 						</li>
-						<li>
-							{" "}
+						<li className="hover:font-bold ease-linear duration-150">
 							{session ? (
-								<button
-									onClick={() => signOut()}
-									className="p-2 rounded-lg border-2 border-white w-20"
-								>
+								<button onClick={() => signOut()} className="rounded-lg">
 									Log Out
 								</button>
 							) : (
-								<button
-									onClick={() => signIn()}
-									className="p-2 rounded-lg border-2 border-white w-20"
-								>
+								<Link href="/signup" className=" rounded-lg">
 									Log In
-								</button>
+								</Link>
 							)}
 						</li>
 					</ul>
