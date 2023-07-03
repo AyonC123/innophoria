@@ -16,7 +16,7 @@ export default function Navbar({ session }) {
 					<Link href="/">Home</Link>
 				</li>
 				<li className="hover:font-bold ease-linear duration-150">
-					<Link href="/contact">Contact</Link>
+					<Link href="/about">About</Link>
 				</li>
 				<li className="hover:font-bold ease-linear duration-150">
 					{session ? (
@@ -53,7 +53,7 @@ export default function Navbar({ session }) {
 							<Link href="/">Home</Link>
 						</li>
 						<li className="hover:font-bold ease-linear duration-150">
-							<Link href="/contact">Contact</Link>
+							<Link href="/about">About</Link>
 						</li>
 						<li className="hover:font-bold ease-linear duration-150">
 							{session ? (

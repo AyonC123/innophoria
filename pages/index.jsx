@@ -25,28 +25,28 @@ export default function Home() {
 			<article className="px-10">
 				<h1 className="text-xl font-bold pb-5">Assesment Categories</h1>
 				<div className="flex justify-evenly gap-10 flex-wrap items-center">
-					<div className="flex flex-col justify-center items-center border-2 border-primary rounded-lg p-5 gap-2">
+					<div className="flex flex-col justify-center items-center bg-white shadow-lg  rounded-lg p-5 gap-2">
 						<h1 className="font-bold text-xl">Software Developer tests</h1>
 						<p>1000+ tests taken</p>
 						<Link href={"#"} className="text-primary">
 							view Test ➜
 						</Link>
 					</div>
-					<div className="flex flex-col justify-center items-center border-2 border-primary rounded-lg p-5 gap-2">
+					<div className="flex flex-col justify-center items-center bg-white shadow-lg rounded-lg p-5 gap-2">
 						<h1 className="font-bold text-xl">Software Testing tests</h1>
 						<p>1200+ tests taken</p>
 						<Link href={"#"} className="text-primary">
 							view Test ➜
 						</Link>
 					</div>
-					<div className="flex flex-col justify-center items-center border-2 border-primary rounded-lg p-5 gap-2">
+					<div className="flex flex-col justify-center items-center bg-white shadow-lg rounded-lg p-5 gap-2">
 						<h1 className="font-bold text-xl">Cyber security tests</h1>
 						<p>7000+ tests taken</p>
 						<Link href={"#"} className="text-primary">
 							view Test ➜
 						</Link>
 					</div>
-					<div className="flex flex-col justify-center items-center border-2 border-primary rounded-lg p-5 gap-2">
+					<div className="flex flex-col justify-center items-center bg-white shadow-lg rounded-lg p-5 gap-2">
 						<h1 className="font-bold text-xl">Non-Engineering tests</h1>
 						<p>8000+ tests taken</p>
 						<Link href={"#"} className="text-primary">
