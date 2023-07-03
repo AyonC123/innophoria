@@ -27,8 +27,8 @@ export default function Navbar({ session }) {
 							Log Out
 						</button>
 					) : (
-						<Link href="/signup" className="hidden sm:block rounded-lg ">
-							Log In
+						<Link href="/signin" className="hidden sm:block rounded-lg ">
+							Sign In
 						</Link>
 					)}
 				</li>
@@ -62,7 +62,7 @@ export default function Navbar({ session }) {
 								</button>
 							) : (
 								<Link href="/signup" className=" rounded-lg">
-									Log In
+									Sign In
 								</Link>
 							)}
 						</li>
