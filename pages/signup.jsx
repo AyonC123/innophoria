@@ -24,7 +24,7 @@ export default function SignUp() {
 					</div>
 					<div
 						style={{ width: "500px" }}
-						className="bg-primary px-5 pb-16 pt-10 rounded-lg items-center flex flex-col justify-center gap-5"
+						className="sm:bg-primary px-5 pb-16 pt-10 rounded-lg items-center flex flex-col justify-center gap-5"
 					>
 						<h1 className="font-bold sm:text-3xl sm:mb-6 mb-2 text-center">
 							Sign Up

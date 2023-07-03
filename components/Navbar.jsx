@@ -61,7 +61,7 @@ export default function Navbar({ session }) {
 									Log Out
 								</button>
 							) : (
-								<Link href="/signup" className=" rounded-lg">
+								<Link href="/signin" className=" rounded-lg">
 									Sign In
 								</Link>
 							)}

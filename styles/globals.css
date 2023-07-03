@@ -26,6 +26,7 @@ body {
 
 .texts {
 	position: relative;
+	z-index: -1;
 }
 
 .texts::before {
@@ -78,4 +79,11 @@ body {
 	align-items: center;
 	border-radius: 50%;
 	font-weight: bold;
+}
+
+@media (max-width: 640px) {
+	.texts::before {
+		width: 13em;
+		height: 13em;
+	}
 }
