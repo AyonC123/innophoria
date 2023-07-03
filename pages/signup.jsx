@@ -2,6 +2,7 @@ import React from "react";
 import { signIn, useSession } from "next-auth/react";
 import Link from "next/link";
 import { useRouter } from "next/router";
+import Image from "next/image";
 
 export default function SignUp() {
 	const { data: session } = useSession();
@@ -33,7 +34,7 @@ export default function SignUp() {
 							className="bg-white p-2 rounded-md sm:w-60 w-48 text-sm sm:text-base"
 						>
 							<p className="flex justify-around">
-								<img
+								<Image
 									src="/github.png"
 									alt="github image"
 									height={10}
