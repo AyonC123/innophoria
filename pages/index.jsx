@@ -5,12 +5,12 @@ export default function Home() {
 	return (
 		<>
 			<main className="sm:px-10 flex justify-between sm:mb-0 mb-10 ">
-				<div className="texts text-center sm:text-left flex-col justify-start gap-5">
+				<div className="texts text-center sm:text-left items-center sm:items-start flex flex-col justify-start gap-5">
 					<h1 className="font-bold text-lg sm:text-6xl">
 						Skills are the <span className="text-primary">steps</span> <br />
 						to your <span className="text-primary">career growth</span>
 					</h1>
-					<p className="text-base sm:text-lg sm:mb-0 mb-5">
+					<p className="text-base sm:text-lg">
 						Asses your skills to stand out to employers
 					</p>
 					<button className="bg-secondary p-2 rounded-md text-white w-40">
