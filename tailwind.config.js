@@ -23,6 +23,9 @@ module.exports = {
 			textColor: {
 				primary: "#00457E",
 			},
+			borderColor: {
+				primary: "#3B71B0",
+			},
 		},
 	},
 	plugins: [],
