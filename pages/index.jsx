@@ -6,7 +6,7 @@ export default function Home() {
 		<>
 			<main className="sm:px-10 flex justify-between sm:mb-0 mb-10 ">
 				<div className="texts text-center sm:text-left items-center sm:items-start flex flex-col justify-start gap-5">
-					<h1 className="font-bold text-lg sm:text-6xl">
+					<h1 className="font-bold text-xl sm:text-6xl">
 						Skills are the <span className="text-primary">steps</span> <br />
 						to your <span className="text-primary">career growth</span>
 					</h1>
